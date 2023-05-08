@@ -51,7 +51,7 @@
 </style>
 
 <main>
-    <h1>Roelf's Demo</h1>
+    <h1>Roelf Demo</h1>
     <div id="controls-container">
         <Player
                 {gameOver}

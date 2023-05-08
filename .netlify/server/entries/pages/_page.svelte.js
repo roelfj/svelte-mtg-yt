@@ -43,7 +43,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   blueWon = redScore <= 0;
   redWon = blueScore <= 0;
   gameOver = blueWon || redWon;
-  return `<main class="svelte-4ofnw5"><h1>The Gathering</h1>
+  return `<main class="svelte-4ofnw5"><h1>Roelf Demo</h1>
     <div id="controls-container" class="svelte-4ofnw5">${validate_component(Player, "Player").$$render(
     $$result,
     {
