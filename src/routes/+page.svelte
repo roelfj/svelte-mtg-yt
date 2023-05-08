@@ -1,7 +1,27 @@
 <script>
     import '../global.css'
-    import player from "./Player.svelte";
     import Player from "./Player.svelte";
+    let redScore = 20;
+    let blueScore = 20;
+    $ : blueWon = redScore <= 0;
+    $ : redWon = blueScore <= 0;
+    $:  gameOver = blueWon || redWon;
+
+    function updateBlueScore(e) {
+         const updateScore = e.detail;
+         blueScore += updateScore;
+    }
+
+    function updateRedScore(e) {
+        const updateScore = e.detail;
+        redScore += updateScore;
+    }
+
+
+    function newGame() {
+        redScore = 20;
+        blueScore = 20;
+    }
 </script>
 
 <style>
@@ -33,8 +53,20 @@
 <main>
     <h1>The Gathering</h1>
     <div id="controls-container">
-        <Player/>
-        <Player/>
+        <Player
+                {gameOver}
+                on:points={updateBlueScore}
+                fontColour=blue
+                won={blueWon}
+                winningText="Blue Wins"
+                score={blueScore}/>
+        <Player
+                {gameOver}
+                on:points={updateRedScore}
+                fontColour=red
+                won={redWon}
+                winningText="Red Wins"
+                score={redScore}/>
     </div>
-    <button>Start Game</button>
+    <button on:click={ newGame } >Start Game</button>
 </main>
