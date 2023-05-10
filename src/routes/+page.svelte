@@ -21,9 +21,12 @@
     })
 
     let questions = [
-        { id: 1, text: `Muizenberg` },
-        { id: 2, text: `Long-Beach_2` },
-        { id: 3, text: `Bloubergstrand` }
+        { id: 1, text: `Muizenberg`, value: `Muizenberg` },
+        { id: 2, text: `Kalk Bay Reef`, value: `Kalk-Bay-Reef` },
+        { id: 3, text: `Long Beach`, value: `Long-Beach_2` },
+        { id: 4, text: `Llandudno`, value: `Llandudno_1` },
+        { id: 5, text: `Queens Beach` , value: `Queens_2`},
+        { id: 6, text: `Bloubergstrand` , value: `Bloubergstrand`}
     ];
 
     let selected;
@@ -33,7 +36,7 @@
 
     function changetown() {
         //alert(`answered question ${selected.id}`);
-        town = `${selected.text}`;
+        town = `${selected.value}`;
         surfurl = "//www.surf-forecast.com/breaks/"+town+"/forecasts/widget/a";
     }
 </script>
