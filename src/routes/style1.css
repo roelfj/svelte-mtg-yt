@@ -44,21 +44,21 @@ span.date {
     margin-top: 50px;
     margin-bottom: 0;
 }
-.h3 {
-    color: red;
-    font-size: 14px;
-    padding-bottom: 0px;
-}
-.h6 {
-    color: red;
-    font-size: 14px;
-    padding-top: 0px;
-}
+/*.h3 {*/
+/*    color: red;*/
+/*    font-size: 14px;*/
+/*    padding-bottom: 0px;*/
+/*}*/
+/*.h6 {*/
+/*    font-size: 44px;*/
+/*}*/
 select {
     /*padding: 20px;*/
+    background-color: rgba(0,0,255,1);
+    border-radius: 30px;
     font-family: "Source Code Pro", monospace;
     font-size: 14px;
-    color: rgba(0,0,255,1);
+    color: white;
     margin-bottom: 40px;
     border-bottom:solid 15px transparent;
     border-left:solid 15px transparent;
