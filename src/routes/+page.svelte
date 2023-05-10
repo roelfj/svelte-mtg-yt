@@ -33,11 +33,13 @@
 
     let town = 'Muizenberg';
     let surfurl = "//www.surf-forecast.com/breaks/"+town+"/forecasts/widget/a";
+    let refurl = "//www.surf-forecast.com/breaks/"+town;
 
     function changetown() {
         //alert(`answered question ${selected.id}`);
         town = `${selected.value}`;
         surfurl = "//www.surf-forecast.com/breaks/"+town+"/forecasts/widget/a";
+        refurl = "//www.surf-forecast.com/breaks/"+town;
     }
 </script>
 
@@ -69,9 +71,16 @@
                         src={surfurl}
                         >
                 </iframe>
+<!--        <a href={refurl} target="_blank">surf-forecast.com</a>-->
     </div>
 
-
+    <a href={refurl} target="_blank">Detail forecast on</a>
+    <a href="//www.surf-forecast.com" target="_blank">
+        <img src="https://www.surf-forecast.com/images/logo_d.gif"
+             alt="surf-forecast.com logo"
+             width="70px"
+        />
+    </a>
 <!--    <a target='_blank' href="https://www.artifak.com" >Best place in the world</a>-->
 
 </div>

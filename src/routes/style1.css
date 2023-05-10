@@ -25,24 +25,23 @@ a {
     background: white;
     color: blue;
     text-decoration: none;
-    padding: 50px 0px 3px;
-    border-radius: 2px;
-    border-bottom: 1px solid blue;
-    transition: .4s all;
-    margin-top: 0px;
+    font-size: 12px;
+    /*padding: 50px 0px 3px;*/
+    /*border-radius: 2px;*/
+    /*border-bottom: 1px solid blue;*/
+    /*transition: .4s all;*/
+    /*margin-top: 0px;*/
 }
-a:hover {
-    background-color: cyan;
-    color: blue;
-}
+/*a:hover {*/
+/*    background-color: cyan;*/
+/*    color: blue;*/
+/*}*/
 span.date {
     margin-right: 11px;
 }
 #links p {
     text-indent: -117px;
     margin-left: 117px;
-    margin-top: 50px;
-    margin-bottom: 0;
 }
 /*.h3 {*/
 /*    color: red;*/
