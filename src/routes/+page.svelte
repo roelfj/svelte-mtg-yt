@@ -6,8 +6,6 @@
 
     <h1>Dirk Surf Report</h1>
 
-
-
     <link href="//www.surf-forecast.com/stylesheets/widget.css" media="screen" rel="stylesheet" type="text/css" />
     <div class="wf-width-cont surf-fc-widget">
         <div class="widget-container">
