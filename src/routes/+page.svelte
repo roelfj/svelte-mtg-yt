@@ -10,7 +10,7 @@
     <div class="wf-width-cont surf-fc-widget">
         <div class="widget-container">
             <div class="external-cont">
-                <iframe title="surf" class="surf-fc-i" allowtransparency="true" src="//www.surf-forecast.com/breaks/Muizenberg/forecasts/widget/a">
+                <iframe title="surf" class="surf-fc-i" allowtransparency="true" src="//www.surf-forecast.com/breaks/Muizenberg/forecasts/widget/a" scrolling="yes">
                 </iframe>
             </div>
         </div>
