@@ -74,8 +74,8 @@
 <!--        <a href={refurl} target="_blank">surf-forecast.com</a>-->
     </div>
 
-    <a href={refurl} target="_blank">Detail forecast on</a>
-    <a href="//www.surf-forecast.com" target="_blank">
+    <a href={refurl} target="_blank">See detail {town} forecast on</a>
+    <a href={refurl} target="_blank">
         <img src="https://www.surf-forecast.com/images/logo_d.gif"
              alt="surf-forecast.com logo"
              width="70px"
