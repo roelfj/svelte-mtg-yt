@@ -1,16 +1,46 @@
 <script>
-    import './style1.css'
+    import './style1.css';
+
+    let questions = [
+        { id: 1, text: `Muizenberg` },
+        { id: 2, text: `Long-Beach_2` },
+        { id: 3, text: `Bloubergstrand` }
+    ];
+
+    let selected;
+
+    let town = 'Muizenberg';
+    let surfurl = "//www.surf-forecast.com/breaks/"+town+"/forecasts/widget/a";
+
+    function changetown() {
+        //alert(`answered question ${selected.id}`);
+        town = `${selected.text}`;
+        surfurl = "//www.surf-forecast.com/breaks/"+town+"/forecasts/widget/a";
+    }
 </script>
 
 <div id="container">
 
-    <h1>Dirk Surf Report</h1>
+    <h4>Dirk Surf Report</h4>
+
+    <select bind:value={selected} on:change={changetown}>
+        {#each questions as question}
+            <option value={question}>
+                {question.text}
+            </option>
+        {/each}
+    </select>
 
     <link href="//www.surf-forecast.com/stylesheets/widget.css" media="screen" rel="stylesheet" type="text/css" />
     <div class="wf-width-cont surf-fc-widget">
         <div class="widget-container">
             <div class="external-cont">
-                <iframe title="surf" class="surf-fc-i" allowtransparency="true" src="//www.surf-forecast.com/breaks/Muizenberg/forecasts/widget/a" scrolling="yes">
+                <iframe
+                        title="surf"
+                        class="surf-fc-i"
+                        allowtransparency="true"
+                        src={surfurl}
+                        >
                 </iframe>
             </div>
         </div>
@@ -28,6 +58,7 @@
         font-family: Helvetica,Arial,sans-serif;
         font-size: 12px;
         color: white;
+        margin-bottom: 50px;
     }
 </style>
 
