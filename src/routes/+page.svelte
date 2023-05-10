@@ -32,9 +32,9 @@
     </select>
 
     <link href="//www.surf-forecast.com/stylesheets/widget.css" media="screen" rel="stylesheet" type="text/css" />
-    <div class="wf-width-cont surf-fc-widget">
-        <div class="widget-container">
-            <div class="external-cont">
+    <div class="surf-fc-widget" >
+<!--        <div class="widget-container">-->
+<!--            <div class="external-cont">-->
                 <iframe
                         title="surf"
                         class="surf-fc-i"
@@ -42,8 +42,8 @@
                         src={surfurl}
                         >
                 </iframe>
-            </div>
-        </div>
+<!--            </div>-->
+<!--        </div>-->
     </div>
 
 
@@ -53,12 +53,23 @@
 
 <style>
     .surf-fc-widget {
-        max-width: 753px;
+        width: 100%;
+        /*max-width: 100vh;*/
+        min-width: 753px;
+        max-height: 400px;
         transition: all 1s;
         font-family: Helvetica,Arial,sans-serif;
-        font-size: 12px;
-        color: white;
-        margin-bottom: 50px;
+        /*font-size: 22px;*/
+        /*color: red;*/
+        /*margin-bottom: 50px;*/
+        overflow: auto;
+        /*overflow-x: scroll;*/
+    }
+    .surf-fc-widget .surf-fc-i {
+        overflow: auto;
+        border: none;
+        height: 410px;
+        width: 100%;
     }
 </style>
 

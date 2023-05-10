@@ -29,7 +29,7 @@ a {
     border-radius: 2px;
     border-bottom: 1px solid blue;
     transition: .4s all;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 a:hover {
     background-color: cyan;
