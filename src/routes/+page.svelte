@@ -7,7 +7,7 @@
     import { onMount } from 'svelte';
     import { tweened } from 'svelte/motion';
 
-    let original = 1; // TYPE NUMBER OF SECONDS HERE
+    let original = 3; // TYPE NUMBER OF SECONDS HERE
     let timer = tweened(original)
 
     setInterval(() => {
@@ -66,12 +66,6 @@
     {:else}
         <h6>{dateString}</h6>
     {/if}
-
-    <!--{#if $timer == 0}-->
-    <!--   <h1>Done</h1>-->
-    <!--{:else}-->
-    <!--    <Circle3 size="60" color="#FF3E00" unit="px" duration="1s" />-->
-    <!--{/if}-->
 
         <select bind:value={selected} on:change={changetown}>
             {#each questions as question}

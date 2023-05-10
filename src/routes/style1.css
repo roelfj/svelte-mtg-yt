@@ -19,23 +19,13 @@ body {
 }
 #container {
     padding: 5px;
-    /*max-width: 960px;*/
 }
 a {
     background: white;
     color: blue;
     text-decoration: none;
     font-size: 12px;
-    /*padding: 50px 0px 3px;*/
-    /*border-radius: 2px;*/
-    /*border-bottom: 1px solid blue;*/
-    /*transition: .4s all;*/
-    /*margin-top: 0px;*/
 }
-/*a:hover {*/
-/*    background-color: cyan;*/
-/*    color: blue;*/
-/*}*/
 span.date {
     margin-right: 11px;
 }
@@ -43,14 +33,6 @@ span.date {
     text-indent: -117px;
     margin-left: 117px;
 }
-/*.h3 {*/
-/*    color: red;*/
-/*    font-size: 14px;*/
-/*    padding-bottom: 0px;*/
-/*}*/
-/*.h6 {*/
-/*    font-size: 44px;*/
-/*}*/
 select {
     /*padding: 20px;*/
     background-color: rgba(0,0,255,1);
@@ -64,4 +46,7 @@ select {
     border-right:solid 15px transparent;
     border-top:solid 15px transparent;
     -webkit-appearance : caret;
+}
+Circle3 {
+    margin-bottom: 40px;
 }
