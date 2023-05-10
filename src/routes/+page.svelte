@@ -59,7 +59,7 @@
 
 <div id="container">
 
-    <h3>Dirk's 48hr Surf Report</h3>
+    <h3>Dirk's Surf Forecast</h3>
 
     {#if !dateString}
         <Circle3 size="30" color="#FF3E00" unit="px" duration="1s" />
