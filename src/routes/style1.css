@@ -18,7 +18,7 @@ body {
     line-height: 1.4;
 }
 #container {
-    padding: 10px;
+    padding: 5px;
     /*max-width: 960px;*/
 }
 a {
@@ -44,9 +44,22 @@ span.date {
     margin-top: 50px;
     margin-bottom: 0;
 }
+.h3 {
+    color: red;
+    font-size: 14px;
+    padding-bottom: 0px;
+}
+.h6 {
+    color: red;
+    font-size: 14px;
+    padding-top: 0px;
+}
 select {
     /*padding: 20px;*/
-    margin-bottom: 50px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+    color: rgba(0,0,255,1);
+    margin-bottom: 40px;
     border-bottom:solid 15px transparent;
     border-left:solid 15px transparent;
     border-right:solid 15px transparent;
