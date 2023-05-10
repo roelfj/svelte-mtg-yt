@@ -50,7 +50,7 @@
     <!--    <Jumper size="60" color="#FF3E00" unit="px" duration="1s" />-->
     <!--{/if}-->
 
-    <h3>Dirk's Surf Report</h3>
+    <h3>Dirk's 48hour Surf Report</h3>
     <h6>{dateString}</h6>
 
     <select bind:value={selected} on:change={changetown}>
