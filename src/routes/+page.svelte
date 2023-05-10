@@ -1,8 +1,19 @@
 <script>
     import './style1.css';
     import { Jumper } from 'svelte-loading-spinners';
+    import { Circle3 } from 'svelte-loading-spinners';
+    import { Wave } from 'svelte-loading-spinners';
     import { navigating,page, } from '$app/stores'
     import { onMount } from 'svelte';
+    import { tweened } from 'svelte/motion';
+
+    let original = 1; // TYPE NUMBER OF SECONDS HERE
+    let timer = tweened(original)
+
+    setInterval(() => {
+        if ($timer > 0) $timer--;
+    }, 1000);
+
 
     let now = new Date(), month, day, year;
     let dateString;
@@ -37,34 +48,46 @@
     let refurl = "//www.surf-forecast.com/breaks/"+town;
 
     function changetown() {
-        //alert(`answered question ${selected.id}`);
+        timer = tweened(original);
         town = `${selected.value}`;
         towntext  = `${selected.text}`;
         surfurl = "//www.surf-forecast.com/breaks/"+town+"/forecasts/widget/a";
         refurl = "//www.surf-forecast.com/breaks/"+town;
+
     }
 </script>
 
 <div id="container">
 
+    <h3>Dirk's 48hr Surf Report</h3>
 
-    <!--{#if !$page.data}-->
-    <!--    <Jumper size="60" color="#FF3E00" unit="px" duration="1s" />-->
+    {#if !dateString}
+        <Circle3 size="60" color="#FF3E00" unit="px" duration="1s" />
+    {:else}
+        <h6>{dateString}</h6>
+    {/if}
+
+    <!--{#if $timer == 0}-->
+    <!--   <h1>Done</h1>-->
+    <!--{:else}-->
+    <!--    <Circle3 size="60" color="#FF3E00" unit="px" duration="1s" />-->
     <!--{/if}-->
 
-    <h3>Dirk's 48hr Surf Report</h3>
-    <h6>{dateString}</h6>
+        <select bind:value={selected} on:change={changetown}>
+            {#each questions as question}
+                <option value={question}>
+                    {question.text}
+                </option>
+            {/each}
+        </select>
 
-    <select bind:value={selected} on:change={changetown}>
-        {#each questions as question}
-            <option value={question}>
-                {question.text}
-            </option>
-        {/each}
-    </select>
+
+
 
     <link href="//www.surf-forecast.com/stylesheets/widget.css" media="screen" rel="stylesheet" type="text/css" />
-    <div class="surf-fc-widget" >
+
+        {#if $timer == 0}
+            <div class="surf-fc-widget" >
                 <iframe
                         title="surf"
                         class="surf-fc-i"
@@ -72,8 +95,13 @@
                         src={surfurl}
                         >
                 </iframe>
+            </div>
+        {:else}
+            <Wave size="60" color="#5785eb" unit="px" duration="1s" />
+        {/if}
 <!--        <a href={refurl} target="_blank">surf-forecast.com</a>-->
-    </div>
+
+
 
     <a href={refurl} target="_blank">See detail {towntext} forecast on</a>
     <a href={refurl} target="_blank">
