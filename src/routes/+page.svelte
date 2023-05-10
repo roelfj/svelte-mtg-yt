@@ -62,7 +62,7 @@
     <h3>Dirk's 48hr Surf Report</h3>
 
     {#if !dateString}
-        <Circle3 size="60" color="#FF3E00" unit="px" duration="1s" />
+        <Circle3 size="30" color="#FF3E00" unit="px" duration="1s" />
     {:else}
         <h6>{dateString}</h6>
     {/if}
