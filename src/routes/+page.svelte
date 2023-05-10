@@ -47,7 +47,7 @@
     </div>
 
 
-    <a target='_blank' href="https://www.artifak.com" >Best place in the world</a>
+<!--    <a target='_blank' href="https://www.artifak.com" >Best place in the world</a>-->
 
 </div>
 
@@ -59,11 +59,9 @@
         max-height: 400px;
         transition: all 1s;
         font-family: Helvetica,Arial,sans-serif;
-        /*font-size: 22px;*/
-        /*color: red;*/
-        /*margin-bottom: 50px;*/
         overflow: auto;
-        /*overflow-x: scroll;*/
+        background-color: red;
+        border: solid 1px blue;
     }
     .surf-fc-widget .surf-fc-i {
         overflow: auto;
