@@ -91,7 +91,7 @@
                 </iframe>
             </div>
         {:else}
-            <Wave size="60" color="#5785eb" unit="px" duration="1s" />
+            <Wave size="60" color="#5785eb" unit="px" duration="1s"/>
         {/if}
 <!--        <a href={refurl} target="_blank">surf-forecast.com</a>-->
 
