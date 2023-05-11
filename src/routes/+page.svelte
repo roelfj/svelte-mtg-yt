@@ -34,10 +34,11 @@
     let questions = [
         { id: 1, text: `Muizenberg`, value: `Muizenberg` },
         { id: 2, text: `Kalk Bay Reef`, value: `Kalk-Bay-Reef` },
-        { id: 3, text: `Long Beach`, value: `Long-Beach_2` },
-        { id: 4, text: `Llandudno`, value: `Llandudno_1` },
-        { id: 5, text: `Queens Beach` , value: `Queens_2`},
-        { id: 6, text: `Bloubergstrand` , value: `Bloubergstrand`}
+        { id: 3, text: `Fish Hoek`, value: `Fish-Hoek` },
+        { id: 4, text: `Long Beach`, value: `Long-Beach_2` },
+        { id: 5, text: `Llandudno`, value: `Llandudno_1` },
+        { id: 6, text: `Queens Beach` , value: `Queens_2`},
+        { id: 7, text: `Bloubergstrand` , value: `Bloubergstrand`}
     ];
 
     let selected;
