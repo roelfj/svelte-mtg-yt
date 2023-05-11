@@ -98,7 +98,7 @@
 
 
 
-    <a href={refurl} target="_blank">See detail {towntext} forecast on</a>
+    <a href={refurl} target="_blank">See {towntext} detail forecast on</a>
     <a href={refurl} target="_blank">
         <img src="https://www.surf-forecast.com/images/logo_d.gif"
              alt="surf-forecast.com logo"
