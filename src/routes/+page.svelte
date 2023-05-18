@@ -38,7 +38,8 @@
         { id: 4, text: `Long Beach`, value: `Long-Beach_2` },
         { id: 5, text: `Llandudno`, value: `Llandudno_1` },
         { id: 6, text: `Queens Beach` , value: `Queens_2`},
-        { id: 7, text: `Bloubergstrand` , value: `Bloubergstrand`}
+        { id: 7, text: `Bloubergstrand` , value: `Bloubergstrand`},
+        { id: 8, text: `Keurbooms` , value: `Keurbooms`}
     ];
 
     let selected;
