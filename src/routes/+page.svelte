@@ -32,14 +32,16 @@
     })
 
     let questions = [
-        { id: 1, text: `Muizenberg`, value: `Muizenberg` },
-        { id: 2, text: `Kalk Bay Reef`, value: `Kalk-Bay-Reef` },
-        { id: 3, text: `Fish Hoek`, value: `Fish-Hoek` },
-        { id: 4, text: `Long Beach`, value: `Long-Beach_2` },
-        { id: 5, text: `Llandudno`, value: `Llandudno_1` },
-        { id: 6, text: `Queens Beach` , value: `Queens_2`},
-        { id: 7, text: `Bloubergstrand` , value: `Bloubergstrand`},
-        { id: 8, text: `Keurbooms` , value: `Keurbooms`}
+        { id: 1, text: `Jeffrey's Bay` , value: `Super-Tubes_1`},
+        { id: 2, text: `Keurbooms` , value: `Keurbooms`},
+        { id: 3, text: `Muizenberg`, value: `Muizenberg` },
+        { id: 4, text: `Kalk Bay Reef`, value: `Kalk-Bay-Reef` },
+        { id: 5, text: `Fish Hoek`, value: `Fish-Hoek` },
+        { id: 5, text: `Long Beach`, value: `Long-Beach_2` },
+        { id: 7, text: `Llandudno`, value: `Llandudno_1` },
+        { id: 8, text: `Queens Beach` , value: `Queens_2`},
+        { id: 9, text: `Bloubergstrand` , value: `Bloubergstrand`},
+        { id: 10, text: `Elandsbaai` , value: `Donkin-Bay`}
     ];
 
     let selected;
